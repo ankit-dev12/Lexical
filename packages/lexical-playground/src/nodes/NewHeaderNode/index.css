@@ -1,0 +1,35 @@
+[type='new-header'] {
+    display: block;
+    margin: 16px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--editor-color-primary, #000);
+  }
+  
+  /* Style for the <h2> tag with increased specificity */
+  [type='new-header']> h2 {
+    background-color: palegoldenrod; /* Pale yellow background */
+    color: pink !important; /* Grey text color */
+    margin: 0; /* Remove default margin */
+    padding: 8px; /* Add padding for better spacing */
+    font-weight: bold; /* Ensure bold styling */
+  }
+  
+  /* Style for the <p> tag with increased specificity */
+  [type='new-header'] > div > p {
+    color: grey; /* Grey text color */
+    margin: 8px 0; /* Adjust margin for paragraph */
+    font-size: 1em; /* Adjust font size */
+  }
+  
+  /* Selected state styling */
+  .selected[type='new-header'] {
+    outline: 2px solid var(--editor-color-primary, #4766cb);
+  }
+  
+  .header-title.placeholder::before {
+    content: 'Title'; /* Placeholder text */
+    color: gray;
+    font-style: italic;
+  }
+  

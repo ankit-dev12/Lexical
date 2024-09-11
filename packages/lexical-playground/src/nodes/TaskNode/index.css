@@ -1,0 +1,32 @@
+[type='task'] {
+    display: block;
+    margin: 16px 0;
+    padding: 12px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+  }
+  
+  [type='task'] > .task-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  [type='task'] > .task-shortdesc {
+    font-style: italic;
+    margin-bottom: 12px;
+  }
+  
+  [type='task'] > .task-steps > .task-step {
+    margin-bottom: 8px;
+    padding-left: 16px;
+    position: relative;
+  }
+  
+  [type='task'] > .task-steps > .task-step:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #666;
+  }
+  
